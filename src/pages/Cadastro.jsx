@@ -42,9 +42,7 @@ async function handleSubmit(e) {
 }
 
 function handleCancel() {
-    // Limpa o formulário
     setForm({ nome: '', email: '', senha: '' });
-    // Redireciona para a página inicial
     window.location.href = '/';
 }
 
@@ -57,7 +55,6 @@ return (
         <p className="text-black text-center mb-10">Se junte à maior plataforma de futebol feminino.</p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          {/* Seção de Formulário e Mensagem */}
         <div className="bg-pink-100 p-6 rounded-lg shadow-xl border border-zinc-700 transition-transform transform hover:scale-105">
             <h3 className="font-semibold text-black">Sobre o cadastro</h3>
             <p className="text-sm text-zinc-500">Preencha os seus dados. Após envio, o sistema salvará as informações.</p>

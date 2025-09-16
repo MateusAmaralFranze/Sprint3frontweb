@@ -21,7 +21,6 @@ const torneios = [
 return (
     <main className="bg-gradient-to-br from-pink-50 via-white to-purple-50 min-h-screen">
     <div className="max-w-6xl mx-auto px-6 py-12">
-        {/* Título */}
         <h2 className="text-3xl font-bold text-darkNavy flex items-center gap-2">
         <Calendar className="w-7 h-7 text-primaryPink" />
         Torneios
@@ -30,7 +29,6 @@ return (
         Gerencie torneios, veja calendário e inscrições.
         </p>
 
-        {/* Cards */}
         <section className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
         {torneios.map((torneio, i) => (
             <article

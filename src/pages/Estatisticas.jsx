@@ -1,4 +1,3 @@
-// src/pages/Estatisticas.jsx
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
@@ -35,17 +34,14 @@ return (
             <p className="text-lg text-zinc-400 font-semibold">{stat.name}</p>
             </div>
         ))}
-          {/* Adicionando o cartão de "Conexões" */}
         <div className="bg-pink-100 p-6 rounded-lg shadow-xl text-center border border-zinc-700">
             <p className="text-5xl font-bold mb-2 text-black">1000+</p>
             <p className="text-lg text-zinc-400 font-semibold">Conexões</p>
         </div>
         </div>
 
-        {/* Seção de Gráficos */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-          {/* Gráfico de Barras - Principais Clubes */}
         <div className="bg-pink-100 p-6 rounded-lg shadow-xl border border-zinc-700">
             <h2 className="text-2xl font-bold text-center mb-4 text-black">Top 5 Clubes por Vitórias</h2>
             <ResponsiveContainer width="100%" height={300}>
@@ -58,7 +54,6 @@ return (
             </ResponsiveContainer>
         </div>
 
-          {/* Gráfico de Barras - Estatísticas Gerais */}
         <div className="bg-pink-100 p-6 rounded-lg shadow-xl border border-zinc-700">
             <h2 className="text-2xl font-bold text-center mb-4 text-black">Estatísticas Gerais</h2>
             <ResponsiveContainer width="100%" height={300}>
@@ -73,11 +68,9 @@ return (
 
         </div>
 
-        {/* Seção de progresso ou outras estatísticas */}
         <div className="mt-8 bg-white p-6 rounded-lg shadow-xl border border-zinc-700">
         <h2 className="text-2xl font-bold text-center mb-4 text-black">Estatísticas Adicionais</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Exemplo de barra de progresso */}
             <div className="bg-pink-100 p-4 rounded-md">
             <p className="text-black font-semibold mb-2">Engajamento da Comunidade</p>
             <div className="w-full bg-zinc-700 rounded-full h-2.5">

@@ -22,7 +22,6 @@ return (
         Encontre e filtre jogadoras por posição e habilidades.
         </p>
 
-        {/* Seção de Filtros */}
         <div className="bg-pink-100 p-6 rounded-lg shadow-lg border border-zinc-700 mb-10">
         <form className="grid grid-cols-1 md:grid-cols-4 gap-6" aria-label="Filtro de jogadoras">
             <label className="flex flex-col">
@@ -64,7 +63,6 @@ return (
         </form>
         </div>
 
-        {/* Seção de Cartões das Jogadoras */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {mockJogadoras.map((jogadora, index) => (
             <article 
@@ -73,7 +71,6 @@ return (
             >
             <header className="flex items-center gap-4 mb-4">
                 <div className="w-16 h-16 bg-pink-200 rounded-full flex items-center justify-center">
-                    {/* Placeholder para a foto de perfil */}
                     <span className="text-3xl font-bold text-pink-700">{jogadora.nome[0]}</span>
                 </div>
                 <div>

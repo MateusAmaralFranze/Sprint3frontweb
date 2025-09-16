@@ -30,7 +30,6 @@ async function handleSubmit(e) {
     throw new Error(errorData.message || 'Erro no servidor');
     }
     
-      // Atualiza a lista de clubes após o cadastro
     fetch('http://localhost:5000/api/clubes')
         .then(res => res.json())
         .then(data => setClubes(data));
@@ -41,11 +40,8 @@ async function handleSubmit(e) {
     }
 }
 
-  // Função para lidar com o cancelamento
 function handleCancel() {
-    // Limpa o formulário
     setForm({ nome: '', cidade: '', email: '', telefone: '' });
-    // Redireciona para a página inicial
     window.location.href = '/';
 }
 
@@ -58,7 +54,6 @@ return (
         <p className="text-zinc-400 text-center mb-10">Cadastre seu clube para participar de torneios e divulgá-lo.</p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          {/* Seção de Formulário e Mensagem */}
         <div className="bg-pink-100 p-6 rounded-lg shadow-xl border border-zinc-700 transition-transform transform hover:scale-105">
             <h3 className="font-semibold text-black mb-2">Sobre o cadastro</h3>
             <p className="text-sm text-zinc-400">Preencha os dados do clube. Após envio, o sistema salvará as informações.</p>
@@ -125,7 +120,6 @@ return (
             {status && <p className="mt-4 text-sm text-zinc-500 text-center">{status}</p>}
         </div>
 
-          {/* Seção de Listagem de Clubes */}
         <div className="bg-pink-100 p-6 rounded-lg shadow-xl border border-zinc-700">
             <h3 className="text-2xl font-bold mb-4 text-black">Clubes cadastrados</h3>
             {clubes.length === 0 ? (

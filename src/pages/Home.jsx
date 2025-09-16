@@ -1,23 +1,18 @@
-// src/pages/Home.jsx
 import React from 'react';
 
 function Home() {
 return (
     <main className="bg-white min-h-screen">
-      {/* Hero Section - Tela Cheia */}
     <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-        {/* Imagem de Fundo (coloque a URL da sua imagem aqui) */}
         <div className="absolute inset-0 z-0">
         <img
             src="https://images.unsplash.com/photo-1543351611-58f69d7c24f6?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Fundo de futebol feminino"
             className="w-full h-full object-cover"
         />
-          {/* Camada de sobreposição com gradiente escuro */}
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-zinc-950/80"></div>
         </div>
         
-        {/* Conteúdo do Hero - Centralizado e Chamativo */}
         <div className="relative z-10 text-center text-black px-4">
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold leading-tight tracking-wide mb-6">
             Conectando o Futuro do Futebol Feminino
@@ -36,7 +31,6 @@ return (
         </div>
     </section>
 
-      {/* Seção de Destaques - Visual Aprimorado */}
     <section className="py-20 bg-white text-black">
         <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 bg-clip-text bg-gradient-to-r text-black">
@@ -44,10 +38,9 @@ return (
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             
-            {/* Cartão de Destaque */}
             <div className="bg-pink-200 p-6 rounded-lg shadow-xl border border-zinc-700 transition-transform duration-300 transform hover:scale-105 cursor-pointer">
             <div className="text-4xl text-blue-400 mb-4">
-                <i className="fas fa-user-circle"></i> {/* Ícone de exemplo, você pode usar um de uma biblioteca */}
+                <i className="fas fa-user-circle"></i> 
             </div>
             <h3 className="text-xl font-bold mb-2">Perfis Profissionais</h3>
             <p className="text-sm text-zinc-700">
@@ -55,7 +48,6 @@ return (
             </p>
             </div>
 
-            {/* Cartão de Destaque */}
             <div className="bg-pink-200 p-6 rounded-lg shadow-xl border border-zinc-700 transition-transform duration-300 transform hover:scale-105 cursor-pointer">
             <div className="text-4xl text-blue-400 mb-4">
                 <i className="fas fa-search"></i>
@@ -66,7 +58,6 @@ return (
             </p>
             </div>
 
-            {/* Cartão de Destaque */}
             <div className="bg-pink-200 p-6 rounded-lg shadow-xl border border-zinc-700 transition-transform duration-300 transform hover:scale-105 cursor-pointer">
             <div className="text-4xl text-blue-400 mb-4">
                 <i className="fas fa-chart-line"></i>
@@ -77,7 +68,6 @@ return (
             </p>
             </div>
 
-            {/* Cartão de Destaque */}
             <div className="bg-pink-200 p-6 rounded-lg shadow-xl border border-zinc-700 transition-transform duration-300 transform hover:scale-105 cursor-pointer">
             <div className="text-4xl text-blue-400 mb-4">
                 <i className="fas fa-calendar-alt"></i>
