@@ -1,3 +1,10 @@
+Integrantes
+
+Mateus Amaral RM562334
+Felipe Sumida RM563082
+Henrique de Lima RM561876
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
